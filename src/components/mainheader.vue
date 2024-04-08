@@ -5,7 +5,10 @@ export default {
 
   data() {
     return {
-      textButton: "Book Now"
+      textButton: "Book Now",
+      indexActive: 0,
+      indexNew: 3,
+      newContent: '<div>New</div>'
     }
   },
 
@@ -28,7 +31,7 @@ export default {
       </div>
       <div class="menu">
         <ul class="d-flex justify-content-between align-items-center text-white text-uppercase ">
-          <li v-for="(item, index) in menu" :class="index === 0 ? 'active' : ''" :key="index">{{ item }}</li>
+          <li v-for="(item, index) in menu" :class="index === indexActive ? 'active' : '' ||index === indexNew ? 'new' : ''" :key="index">{{ item }}</li>
           <buttonVue :text=this.textButton />
         </ul>
       </div>
@@ -65,7 +68,14 @@ export default {
         padding-top: 5px;
         padding-bottom: 5px;
       }
-
+      .new::after{
+        content: ("NEW");
+        background-color: $bayleaf;
+        font-size: 10px;
+        padding: 4px 8px;
+        margin-left: 5px;
+        border-radius: 5px;
+      }
       li {
         list-style: none;
       }

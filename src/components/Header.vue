@@ -52,11 +52,6 @@ import mainheader from './mainheader.vue'
 
 @use '../assets/scss/partials/_variables.scss' as *;
 
-// .{
-//   border: 1px solid black;
-//   background-color: rgba(0, 255, 0, 0.3)
-// }
-
 .all{
   height: 160px;
   .top-header{
