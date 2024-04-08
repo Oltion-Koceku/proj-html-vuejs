@@ -5,6 +5,7 @@ import mainheader from './mainheader.vue'
     data(){
       return{
         store,
+        // menu da passare con le props
         menu: ['home', 'about', 'prices', 'courses', 'locations', 'blog']
       }
     },
@@ -54,6 +55,8 @@ import mainheader from './mainheader.vue'
 
 .all{
   height: 160px;
+  position: fixed;
+  width: 100%;
   .top-header{
     background-color: $tundora;
     font-size: 15px;

@@ -7,13 +7,14 @@ export default {
     return {
       textButton: "Book Now",
       indexActive: 0,
-      indexNew: 3,
-      newContent: '<div>New</div>'
+      indexNew: 3
+      // rendo modificabili le mie classi
     }
   },
 
   props: {
     menu: Array
+    // passo il menu tramite props
   },
 
   components: {
@@ -31,6 +32,7 @@ export default {
       </div>
       <div class="menu">
         <ul class="d-flex justify-content-between align-items-center text-white text-uppercase ">
+          <!-- utilizzo un v-for per "scomponento" l'arrey con il menu // con il : della classe capisco quale info attivare e dove aggiungere il 'new' -->
           <li v-for="(item, index) in menu" :class="index === indexActive ? 'active' : '' ||index === indexNew ? 'new' : ''" :key="index">{{ item }}</li>
           <buttonVue :text=this.textButton />
         </ul>
