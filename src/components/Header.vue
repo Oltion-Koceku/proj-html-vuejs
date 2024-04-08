@@ -5,7 +5,7 @@ import mainheader from './mainheader.vue'
     data(){
       return{
         store,
-        menu: ['home', 'about', 'courses', 'locations', 'blog']
+        menu: ['home', 'about', 'prices', 'courses', 'locations', 'blog']
       }
     },
 
@@ -18,10 +18,10 @@ import mainheader from './mainheader.vue'
 
 
 <template>
-  <div class="all debug">
+  <div class="all ">
 
       <!-- divido in due l'header -->
-      <div class="top-header debug d-flex align-items-center ">
+      <div class="top-header  d-flex align-items-center ">
         <div class="container">
           <div class="info d-flex justify-content-between">
             <div class="info1">
@@ -34,12 +34,12 @@ import mainheader from './mainheader.vue'
           
         </div>
       </div>
-      <div class="container">
+      <!-- <div class="container"> -->
         <mainheader 
           class="mainh" 
           :menu = this.menu
           />
-      </div>
+      <!-- </div> -->
       
     
   </div>
@@ -52,10 +52,10 @@ import mainheader from './mainheader.vue'
 
 @use '../assets/scss/partials/_variables.scss' as *;
 
-.debug{
-  border: 1px solid black;
-  background-color: rgba(0, 255, 0, 0.3)
-}
+// .{
+//   border: 1px solid black;
+//   background-color: rgba(0, 255, 0, 0.3)
+// }
 
 .all{
   height: 160px;
