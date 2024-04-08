@@ -32,6 +32,7 @@ import buttonVue from './partials/button.vue'
 
 
 <style lang="scss" scoped>
+@use '../assets/scss/partials/_variables.scss' as *;
   #jumbo{
     padding-top: 160px;
     height: 770px;
@@ -56,7 +57,7 @@ import buttonVue from './partials/button.vue'
       width: 170px;
       height: 70px;
       &:hover{
-        background-color: gray;
+        background-color: $axolotl;
       }
     }
   }

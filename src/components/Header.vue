@@ -57,6 +57,7 @@ import mainheader from './mainheader.vue'
   height: 160px;
   position: fixed;
   width: 100%;
+  z-index: 999;
   .top-header{
     background-color: $tundora;
     font-size: 15px;
