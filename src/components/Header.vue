@@ -1,10 +1,16 @@
 <script>
 import {store} from '../data/store'
+import mainheader from './mainheader.vue'
   export default {  
     data(){
       return{
-        store
+        store,
+        menu: ['home', 'about', 'courses', 'locations', 'blog']
       }
+    },
+
+    components:{
+      mainheader
     }
     
   }
@@ -28,7 +34,13 @@ import {store} from '../data/store'
           
         </div>
       </div>
-      <div class="main-header"></div>
+      <div class="container">
+        <mainheader 
+          class="mainh" 
+          :menu = this.menu
+          />
+      </div>
+      
     
   </div>
     
@@ -49,10 +61,14 @@ import {store} from '../data/store'
   height: 160px;
   .top-header{
     background-color: $tundora;
+    font-size: 15px;
     height: 50px;
     .info{
       color: $athensgray;
     }
+  }
+  .mainh{
+    height: 110px;
   }
 }
 </style>
