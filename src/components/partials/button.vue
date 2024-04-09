@@ -19,5 +19,6 @@
     background-color: $bayleaf;
     color: white;
     text-transform: uppercase;
+    font-weight: 700;
   }
 </style>

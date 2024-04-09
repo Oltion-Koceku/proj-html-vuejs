@@ -17,10 +17,10 @@ export default {
 <template>
   <section id="lession">
     <div class="container">
-      <div class="text-form d-flex">
+      <div class="text-form d-flex position-relative ">
         <div class="text w-50 ">
           <h2>Get Behind The Wheel</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro fugiat dolorum sequi enim ad dolore, saepe
+          <p class="first mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro fugiat dolorum sequi enim ad dolore, saepe
             error id quam reprehenderit?</p>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed corrupti nemo soluta dolore quas pariatur
             dolorem
@@ -29,7 +29,7 @@ export default {
             saepe a doloribus commodi ullam. Porro id veritatis itaque qui voluptates laborum. Architecto hic cupiditate
             commodi porro sed.</p>
         </div>
-        <div class="form w-50 ">
+        <div class="form w-50 position-absolute">
           <div class="card d-flex flex-column align-items-center">
             <div class="card-body ">
               <div class="formtext text-center ">
@@ -69,9 +69,26 @@ export default {
   .text {
     margin-top: 100px;
     width: 500px;
+    padding-right: 100px;
+    color: $capecod;
+    h2{
+      font-size: 40px;
+      margin-bottom: 3rem;
+      font-weight: 600;
+    }
+    .first{
+      font-size: 22px;
+    }
+    p:last-child{
+      font-size: 18px;
+    }
   }
   .form{
+    right: 0;
+    top: -45px;
     .card{
+      border-radius: 15px;
+      box-shadow: 0 0 2px 0 lightgray, 0 20px 40px lightgray;
       .card-body{
         width: 81%;
         input{
@@ -87,6 +104,7 @@ export default {
           }
           p{
             font-size: 17px;
+            color: $capecod;
           }
         }
       }
