@@ -2,6 +2,7 @@
 import {store} from '../data/store'
 import firstLessionVue from './firstLession.vue'
 import jumboVue from './jumbo.vue'
+import startLearningVue from './startLearning.vue'
   export default {
     data(){
       return{
@@ -11,7 +12,8 @@ import jumboVue from './jumbo.vue'
 
     components:{
       jumboVue,
-      firstLessionVue
+      firstLessionVue,
+      startLearningVue
     }
   }
 </script>
@@ -20,6 +22,7 @@ import jumboVue from './jumbo.vue'
 <template>
   <jumboVue />
   <firstLessionVue />
+  <startLearningVue />
 </template>
 
 

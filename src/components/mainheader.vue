@@ -33,7 +33,7 @@ export default {
       <div class="menu">
         <ul class="d-flex justify-content-between align-items-center text-white text-uppercase ">
           <!-- utilizzo un v-for per "scomponento" l'arrey con il menu // con il : della classe capisco quale info attivare e dove aggiungere il 'new' -->
-          <li v-for="(item, index) in menu" :class="index === indexActive ? 'active' : '' ||index === indexNew ? 'new' : ''" :key="index">{{ item }}</li>
+          <li v-for="(item, index) in menu" :class="index === indexActive ? 'active' : '' ||index === indexNew ? 'new' : ''" :key="index" @click="indexActive = index">{{ item }}</li>
           <buttonVue :text=this.textButton />
         </ul>
       </div>
@@ -81,6 +81,7 @@ export default {
       li {
         list-style: none;
         font-weight: 700;
+        cursor: pointer;
       }
     }
 
