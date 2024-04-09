@@ -1,5 +1,6 @@
 <script>
 import {store} from '../data/store'
+import firstLessionVue from './firstLession.vue'
 import jumboVue from './jumbo.vue'
   export default {
     data(){
@@ -9,7 +10,8 @@ import jumboVue from './jumbo.vue'
     },
 
     components:{
-      jumboVue
+      jumboVue,
+      firstLessionVue
     }
   }
 </script>
@@ -17,6 +19,7 @@ import jumboVue from './jumbo.vue'
 
 <template>
   <jumboVue />
+  <firstLessionVue />
 </template>
 
 
