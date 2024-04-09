@@ -1,5 +1,6 @@
 <script>
 import {store} from '../data/store'
+import cursesVue from './curses.vue'
 import firstLessionVue from './firstLession.vue'
 import jumboVue from './jumbo.vue'
 import startLearningVue from './startLearning.vue'
@@ -13,7 +14,8 @@ import startLearningVue from './startLearning.vue'
     components:{
       jumboVue,
       firstLessionVue,
-      startLearningVue
+      startLearningVue,
+      cursesVue
     }
   }
 </script>
@@ -23,6 +25,7 @@ import startLearningVue from './startLearning.vue'
   <jumboVue />
   <firstLessionVue />
   <startLearningVue />
+  <cursesVue />
 </template>
 
 
