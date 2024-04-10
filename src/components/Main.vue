@@ -7,6 +7,7 @@ import startLearningVue from './startLearning.vue'
 import instructors from './instructors.vue'
 import testimonials from './testimonials.vue'
 import news from './news.vue'
+import newsletter from './newsletter.vue'
 
   export default {
     data(){
@@ -22,7 +23,8 @@ import news from './news.vue'
       cursesVue,
       instructors,
       testimonials,
-      news
+      news,
+      newsletter
     }
   }
 </script>
@@ -36,6 +38,7 @@ import news from './news.vue'
   <instructors />
   <testimonials />
   <news />
+  <newsletter />
 </template>
 
 
