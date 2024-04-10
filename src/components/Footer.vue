@@ -77,7 +77,7 @@ export default {
       </div>
     </div>
   </div>
-  <div class="footer-bottom">
+  <div class="footer-bottom position-relative ">
     <div class="container d-flex align-items-center h-100 justify-content-between ">
       <div class="text">
         <p><i class="fa-regular fa-copyright"></i> Copyright 2012 - 2020 | Avada Theme by <span>ThemeFusion</span> | All Rights Reserved | Powered by <span>WordPress</span></p>
@@ -88,6 +88,9 @@ export default {
         <i class="fa-brands fa-youtube"></i>
         <i class="fa-brands fa-instagram"></i>
       </div>
+    </div>
+    <div class="arrow d-flex justify-content-center align-items-center position-absolute ">
+      <i class="fa-solid fa-angle-up text-white"></i>
     </div>
   </div>
 </template>
@@ -138,6 +141,15 @@ export default {
   height: 150px;
   background-color: $aztec;
   color: $gumbo;
+  .arrow{
+    width: 50px;
+    height: 35px;
+    background-color: $capecod;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    bottom: 0;
+    right: 50px;
+  }
   .text{
     p{
       span{
