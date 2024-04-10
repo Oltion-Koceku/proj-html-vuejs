@@ -4,6 +4,9 @@ import cursesVue from './curses.vue'
 import firstLessionVue from './firstLession.vue'
 import jumboVue from './jumbo.vue'
 import startLearningVue from './startLearning.vue'
+import instructors from './instructors.vue'
+import testimonials from './testimonials.vue'
+
   export default {
     data(){
       return{
@@ -15,7 +18,9 @@ import startLearningVue from './startLearning.vue'
       jumboVue,
       firstLessionVue,
       startLearningVue,
-      cursesVue
+      cursesVue,
+      instructors,
+      testimonials
     }
   }
 </script>
@@ -26,6 +31,8 @@ import startLearningVue from './startLearning.vue'
   <firstLessionVue />
   <startLearningVue />
   <cursesVue />
+  <instructors />
+  <testimonials />
 </template>
 
 

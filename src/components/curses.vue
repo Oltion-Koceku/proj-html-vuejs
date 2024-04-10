@@ -1,17 +1,21 @@
 
 <script>
 import buttonVue from './partials/button.vue'
+import cardPassVue from './partials/cardPass.vue'
 import waveVue from './partials/wave.vue'
+import {pass} from '../data/passCars'
   export default {
 
     data(){
       return{
-        textButton: 'course information'  
+        textButton: 'course information',
+        pass
       }
     },
     components:{
       waveVue,
-      buttonVue
+      buttonVue,
+      cardPassVue
     }
   }
 </script>
@@ -19,7 +23,7 @@ import waveVue from './partials/wave.vue'
 
 <template>
   <section id="information">
-    <div class="container d-flex h-100">
+    <div class="container h-75 d-flex justify-content-beteen  align-items-center ">
       <!-- card -->
       <div class="card-form">
         <div class="card">
@@ -36,8 +40,17 @@ import waveVue from './partials/wave.vue'
           </div>
         </div>
       </div>
-      <div class="pass"></div>
       <!-- img -->
+      <div class="pass d-flex justify-content-between">
+        <div v-for="(e, i) in pass" :key="i" class="cardCourse w-100  d-flex align-items-center justify-content-end ">
+          <cardPassVue
+            :card= e
+          />
+        </div>
+        
+      </div>
+     
+     
     </div>
       <div class="wave1">
         <waveVue />
@@ -54,19 +67,28 @@ import waveVue from './partials/wave.vue'
   background-position:20% 125%;
   background-size: cover;
   position: relative;
+  .pass{
+    width: 60%;
+    height: 100%;
+    .card{
+      width: 80%;
+    }
+  }
   .wave1{
     position: absolute;
     width: 100%;
     bottom: 0;
   }
   .card-form{
-    width: 24%;
+    width: 40%;
     height: 65%;  
-    position: absolute;
-    top: -6%;
     .card{
-      width: 100%;
-      height: 100%;
+      position: absolute;
+      top: -6%;
+      margin-right: 20px;
+      z-index: 100;
+      width: 500px;
+      height: 65%;
       border-radius: 15px;
       box-shadow: 0 0 2px 0 lightgray, 0 20px 40px lightgray;
       .card-body{
