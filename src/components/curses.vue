@@ -98,7 +98,7 @@ import {pass} from '../data/passCars'
           width: 50px;
           left: 0;
           top: 0;
-         border-radius: 5px;
+         border-top-left-radius: 5px;
 
         }
         h2{
