@@ -53,40 +53,44 @@ export default {
   background-size: cover;
   background-position: center;
 
-  .widget{
+  .widget {
     position: absolute;
     top: 140px;
     z-index: 999;
     right: 20px;
-    .demos{
+
+    .demos {
       width: 80px;
       height: 70px;
       font-weight: 600;
-      border: 1px solid black;
       border-radius: 5px;
       background-color: white;
-      i{
+
+      i {
         font-size: 30px;
         margin-bottom: 14px;
       }
     }
-    .sale{
+
+    .sale {
       background-color: white;
       width: 80px;
       height: 70px;
       font-weight: 600;
-      border: 1px solid black;
       border-radius: 5px;
-      .number{
+
+      .number {
         color: $bayleaf;
         font-weight: 600;
-        div{
+
+        div {
           font-size: 30px;
           font-weight: 700;
         }
       }
     }
   }
+
   .title {
     h1 {
       font-size: 75px;

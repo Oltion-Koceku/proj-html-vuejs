@@ -70,8 +70,9 @@ export default {
     margin-top: 100px;
     width: 500px;
     padding-right: 100px;
-    color: $capecod;
+    color: $gumbo;
     h2{
+      color: $firefly;
       font-size: 40px;
       margin-bottom: 3rem;
       font-weight: 600;
@@ -91,8 +92,10 @@ export default {
       box-shadow: 0 0 2px 0 lightgray, 0 20px 40px lightgray;
       .card-body{
         width: 81%;
+        color: rgb(190, 174, 174);
+
         input{
-          background-color: $athensgray;
+          background-color: rgba(197, 190, 190, 0.123);
         }
         label{
           text-transform: capitalize;
@@ -104,7 +107,7 @@ export default {
           }
           p{
             font-size: 17px;
-            color: $capecod;
+            color: rgb(190, 174, 174);
           }
         }
       }
